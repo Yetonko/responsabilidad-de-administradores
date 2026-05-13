@@ -961,7 +961,7 @@
 
   <script>
     // ── WEBHOOK MAKE (actualizar con el webhook de la nueva web) ──
-    const WEBHOOK_URL = 'PENDIENTE_WEBHOOK_NUEVA_WEB';
+    const WEBHOOK_URL = 'https://hook.eu1.make.com/qj65c4rikfxhir20sqo6wjgao5xmaw5h';
 
     // Navbar
     function toggleMenu() {
@@ -1016,7 +1016,7 @@
       data.fecha = new Date().toISOString();
 
       try {
-        if (WEBHOOK_URL !== 'PENDIENTE_WEBHOOK_NUEVA_WEB') {
+        if (WEBHOOK_URL !== 'https://hook.eu1.make.com/qj65c4rikfxhir20sqo6wjgao5xmaw5h') {
           await fetch(WEBHOOK_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
