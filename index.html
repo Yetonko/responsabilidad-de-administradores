@@ -317,6 +317,7 @@
           <li><a href="#asesorias">Para asesorías</a></li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="/blog.html">Blog</a></li>
         </ul>
         <a href="#formulario" class="navbar-cta">Consulta gratuita</a>
         <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
@@ -329,6 +330,7 @@
         <a href="#asesorias" onclick="toggleMenu()">Para asesorías</a>
         <a href="#proceso" onclick="toggleMenu()">Proceso</a>
         <a href="#faq" onclick="toggleMenu()">Preguntas frecuentes</a>
+        <a href="/blog.html" onclick="toggleMenu()">Blog</a>
         <a href="#formulario" onclick="toggleMenu()" style="color:#7BAAA0; font-weight:700;">→ Consulta gratuita</a>
       </div>
     </div>
@@ -1016,13 +1018,11 @@
       data.fecha = new Date().toISOString();
 
       try {
-        if (WEBHOOK_URL !== 'https://hook.eu1.make.com/qj65c4rikfxhir20sqo6wjgao5xmaw5h') {
-          await fetch(WEBHOOK_URL, {
+        await fetch(WEBHOOK_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
           });
-        }
         form.style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
         document.querySelector('.form-tabs').style.display = 'none';
