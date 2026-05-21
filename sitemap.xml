@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.responsabilidadadministradores.com/</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.responsabilidadadministradores.com/blog.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.responsabilidadadministradores.com/derivacion-tributaria-administrador-art-43-lgt.html</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.responsabilidadadministradores.com/responsabilidad-administradores-preinsolvencia.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   <url>
     <loc>https://www.responsabilidadadministradores.com/administrador-cuando-respondo-personalmente-deudas-empresa.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.responsabilidadadministradores.com/aviso-legal.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.responsabilidadadministradores.com/derivacion-tributaria-administrador-art-43-lgt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://www.responsabilidadadministradores.com/privacidad.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.responsabilidadadministradores.com/responsabilidad-administradores-preinsolvencia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://www.responsabilidadadministradores.com/cookies.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.responsabilidadadministradores.com/responsabilidad-solidaria-art-367-trlsc-deudas-sociales.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
 </urlset>
