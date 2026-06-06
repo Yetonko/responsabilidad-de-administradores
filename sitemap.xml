@@ -3,38 +3,65 @@
 
   <url>
     <loc>https://www.responsabilidadadministradores.com/</loc>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.responsabilidadadministradores.com/blog.html</loc>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.responsabilidadadministradores.com/administrador-cuando-respondo-personalmente-deudas-empresa.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.responsabilidadadministradores.com/derivacion-tributaria-administrador-art-43-lgt.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.responsabilidadadministradores.com/responsabilidad-administradores-preinsolvencia.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.responsabilidadadministradores.com/responsabilidad-solidaria-art-367-trlsc-deudas-sociales.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.responsabilidadadministradores.com/concurso-culpable-calificacion-concursal-administrador.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.responsabilidadadministradores.com/derivacion-tributaria-administrador-concurso-prescripcion-sts-545-2026.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.responsabilidadadministradores.com/plan-de-reestructuracion-para-pymes-alternativa-al-concurso-.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
