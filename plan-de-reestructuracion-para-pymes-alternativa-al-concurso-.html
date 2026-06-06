@@ -70,7 +70,14 @@
     footer a{color:#888}
     footer a:hover{color:var(--gold)}
     .fl{margin-top:8px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    @media(max-width:600px){.article-hero{padding:36px 20px 28px}.article-body{padding:32px 20px}}
+    .related-articles{margin-top:36px;border-top:1px solid var(--border);padding-top:28px}
+    .related-articles h4{font-family:var(--serif);font-size:16px;color:var(--muted);margin-bottom:16px;text-transform:uppercase;letter-spacing:1px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+    .related-card{background:var(--white);border:1px solid var(--border);padding:16px;display:block}
+    .related-card .rc-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);font-weight:700;display:block;margin-bottom:6px}
+    .related-card .rc-title{font-family:var(--serif);font-size:14px;color:var(--text);line-height:1.4;margin-bottom:8px}
+    .related-card .rc-link{font-size:12px;color:var(--gold)}
+    @media(max-width:600px){.article-hero{padding:36px 20px 28px}.article-body{padding:32px 20px}.related-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -80,7 +87,7 @@
       <div class="logo-gem">MP</div>
       <div class="logo-txt"><div class="name">MURCIA PALOMAR ABOGADOS</div><div class="sub">Especialistas en Derecho Concursal</div></div>
     </div>
-    <a href="index.html" class="back-link">← Volver a la web</a>
+    <a href="https://www.responsabilidadadministradores.com/blog.html" class="back-link">&#8592; Volver al blog</a>
   </div>
 </header>
 <div class="article-hero">
@@ -143,16 +150,38 @@
         <p>Abogado especialista en derecho concursal y socio en Murcia Palomar Abogados. Publica análisis jurídicos en <a href="https://www.mariopalomarabogado.blog" style="color:var(--gold)">mariopalomarabogado.blog</a>.</p>
       </div>
     </div>
+    <div class="related-articles">
+      <h4>Artículos relacionados</h4>
+      <div class="related-grid">
+        <a href="https://www.responsabilidadadministradores.com/responsabilidad-administradores-preinsolvencia.html" class="related-card">
+          <span class="rc-tag">Preinsolvencia</span>
+          <div class="rc-title">Responsabilidad del administrador en preinsolvencia: obligaciones, plazos y defensa</div>
+          <span class="rc-link">Leer artículo →</span>
+        </a>
+        <a href="https://www.responsabilidadadministradores.com/responsabilidad-solidaria-art-367-trlsc-deudas-sociales.html" class="related-card">
+          <span class="rc-tag">Responsabilidad Societaria</span>
+          <div class="rc-title">Responsabilidad solidaria del administrador por deudas sociales: el art. 367 TRLSC</div>
+          <span class="rc-link">Leer artículo →</span>
+        </a>
+        <a href="https://www.responsabilidadadministradores.com/administrador-cuando-respondo-personalmente-deudas-empresa.html" class="related-card">
+          <span class="rc-tag">Responsabilidad Societaria</span>
+          <div class="rc-title">Administrador de empresa: cuándo respondo personalmente de las deudas</div>
+          <span class="rc-link">Leer artículo →</span>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 <footer>
   <p><strong>MURCIA PALOMAR ABOGADOS, SLP</strong> · Derecho Concursal · Barcelona · Madrid</p>
   <div class="fl">
-    <a href="https://www.mpabogados.eu" target="_blank">www.mpabogados.eu</a>
-    <a href="https://www.mariopalomarabogado.blog" target="_blank">Blog jurídico</a>
-    <a href="index.html">Volver a la web</a>
+    <a href="https://www.responsabilidadadministradores.com/">Inicio</a>
+    <a href="https://www.responsabilidadadministradores.com/blog.html">Blog</a>
+    <a href="https://www.responsabilidadadministradores.com/aviso-legal.html">Aviso Legal</a>
+    <a href="https://www.responsabilidadadministradores.com/privacidad.html">Privacidad</a>
+    <a href="https://www.responsabilidadadministradores.com/cookies.html">Cookies</a>
   </div>
-  <p style="margin-top:8px;font-size:11px;color:#334466">© 2025 Murcia Palomar Abogados, SLP. Contenido informativo, no asesoramiento jurídico.</p>
+  <p style="margin-top:8px;font-size:11px;color:#556688">© 2026 Murcia Palomar Abogados, SLP. Contenido informativo, no asesoramiento jurídico.</p>
 </footer>
 </body>
 </html>
