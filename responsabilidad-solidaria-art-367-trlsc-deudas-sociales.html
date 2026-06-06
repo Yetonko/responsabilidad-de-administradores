@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LN8HQCPKZK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LN8HQCPKZK');
-</script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Responsabilidad solidaria del administrador por deudas sociales: el art. 367 TRLSC | ResponsabilidadAdministradores.com</title>
@@ -17,7 +9,7 @@
   <link rel="canonical" href="https://www.responsabilidadadministradores.com/responsabilidad-solidaria-art-367-trlsc-deudas-sociales.html"/>
   <meta property="og:type" content="article"/>
   <meta property="og:title" content="Responsabilidad solidaria del administrador por deudas sociales: el art. 367 TRLSC explicado"/>
-  <meta property="og:description" content="El art. 367 TRLSC convierte al administrador en responsable solidario de las deudas posteriores a la causa de disolución. Análisis completo con jurisprudencia del Tribunal Supremo."/>
+  <meta property="og:description" content="El art. 367 TRLSC convierte al administrador en responsable solidario de las deudas posteriores a la causa de disolución. Análisis completo: supuestos, plazos, jurisprudencia y defensa."/>
   <meta property="og:locale" content="es_ES"/>
   <meta property="og:site_name" content="ResponsabilidadAdministradores.com"/>
   <script type="application/ld+json">
@@ -26,258 +18,190 @@
     "@type": "Article",
     "headline": "Responsabilidad solidaria del administrador por deudas sociales: el art. 367 TRLSC explicado",
     "author": {"@type": "Person", "name": "Mario Palomar", "url": "https://www.mariopalomarabogado.blog"},
-    "publisher": {"@type": "Organization", "name": "Murcia Palomar Abogados, SLP", "url": "https://www.responsabilidadadministradores.com"},
+    "publisher": {"@type": "Organization", "name": "Murcia Palomar Abogados", "url": "https://www.responsabilidadadministradores.com"},
     "datePublished": "2026-05-18",
     "inLanguage": "es"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --navy: #1A1A1A; --navy-d: #111111; --gray-50: #F9FAFB; --gray-100: #F3F4F6;
-      --gray-200: #E5E7EB; --gray-500: #6B7280; --gray-700: #374151; --text: #111111;
-      --white: #FFFFFF;
-    }
-    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text); line-height: 1.65; }
-    a { color: inherit; text-decoration: none; }
-
-    /* NAVBAR */
-    .navbar { background: rgba(17,17,17,0.97); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
-    .navbar-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
-    .navbar-logo { font-size: 1rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1.2; }
-    .navbar-logo span { color: rgba(255,255,255,0.5); display: block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.5px; }
-    .back-link { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 500; transition: color 0.2s; }
-    .back-link:hover { color: #fff; }
-
-    /* HERO */
-    .article-hero { background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 64px 28px 48px; }
-    .article-inner { max-width: 740px; margin: 0 auto; }
-    .art-tag { display: inline-block; font-size: 0.71rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gray-700); font-weight: 700; margin-bottom: 16px; background: var(--gray-100); padding: 5px 12px; border-radius: 4px; }
-    .article-hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.15; color: var(--text); margin-bottom: 20px; letter-spacing: -0.5px; }
-    .art-meta { font-size: 0.8rem; color: var(--gray-500); display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 22px; }
-    .art-lead { font-size: 1.05rem; color: var(--gray-700); line-height: 1.75; border-left: 3px solid var(--navy); padding-left: 18px; }
-
-    /* BODY */
-    .article-body { padding: 56px 28px 80px; background: var(--white); }
-    .art-content { max-width: 740px; margin: 0 auto; }
-    .art-content h2 { font-size: clamp(1.15rem, 2.5vw, 1.5rem); font-weight: 800; color: var(--text); margin: 44px 0 14px; line-height: 1.25; letter-spacing: -0.3px; }
-    .art-content h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 28px 0 10px; }
-    .art-content p { font-size: 0.97rem; color: #333; line-height: 1.85; margin-bottom: 18px; }
-    .art-content ul { list-style: none; margin: 0 0 18px; padding: 0; }
-    .art-content ul li { font-size: 0.97rem; color: #333; line-height: 1.75; margin-bottom: 10px; padding-left: 22px; position: relative; }
-    .art-content ul li::before { content: '—'; position: absolute; left: 0; color: var(--gray-700); font-weight: 700; }
-    .art-content strong { color: var(--navy); }
-
-    .callout { background: var(--gray-50); border-left: 4px solid var(--navy); padding: 20px 22px; margin: 28px 0; border-radius: 0 8px 8px 0; }
-    .callout p { margin: 0; font-size: 0.92rem; color: var(--gray-700); line-height: 1.75; }
-
-    .alert-box { background: #FFF8E1; border-left: 4px solid #F59E0B; padding: 20px 22px; margin: 28px 0; border-radius: 0 8px 8px 0; }
-    .alert-box p { margin: 0; font-size: 0.92rem; color: #78350F; line-height: 1.75; }
-
-    /* CTA */
-    .cta-article { background: var(--navy-d); color: #fff; padding: 44px 36px; margin: 48px 0 0; text-align: center; border-radius: 12px; }
-    .cta-article h3 { font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 10px; letter-spacing: -0.3px; }
-    .cta-article p { font-size: 0.92rem; color: rgba(255,255,255,0.7); margin-bottom: 24px; }
-    .btn-cta { display: inline-block; background: #fff; color: var(--navy); font-weight: 700; font-size: 0.95rem; padding: 14px 32px; border-radius: 8px; transition: all 0.2s; }
-    .btn-cta:hover { background: var(--gray-100); transform: translateY(-2px); }
-
-    /* AUTHOR */
-    .author-box { background: var(--gray-50); border: 1px solid var(--gray-200); padding: 24px; margin-top: 40px; display: flex; gap: 18px; align-items: flex-start; border-radius: 10px; }
-    .author-av { width: 48px; height: 48px; min-width: 48px; background: var(--navy); display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1rem; color: #fff; font-weight: 800; }
-    .author-info strong { display: block; font-size: 0.9rem; color: var(--text); margin-bottom: 4px; font-weight: 700; }
-    .author-info p { font-size: 0.82rem; color: var(--gray-500); line-height: 1.6; margin: 0; }
-
-    /* RELATED */
-    .related { background: var(--gray-50); border-top: 1px solid var(--gray-200); padding: 56px 28px; }
-    .related-inner { max-width: 740px; margin: 0 auto; }
-    .related h3 { font-size: 1.1rem; font-weight: 800; color: var(--text); margin-bottom: 24px; }
-    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .related-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 10px; padding: 22px; transition: all 0.2s; }
-    .related-card:hover { border-color: #9CA3AF; box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
-    .related-card-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-500); margin-bottom: 10px; }
-    .related-card h4 { font-size: 0.92rem; font-weight: 700; color: var(--text); line-height: 1.4; margin-bottom: 10px; }
-    .related-card span { font-size: 0.82rem; font-weight: 700; color: var(--gray-700); }
-
-    /* FOOTER */
-    footer { background: #0a0a0a; color: rgba(255,255,255,0.4); text-align: center; padding: 28px 24px; font-size: 0.82rem; }
-    footer a { color: rgba(255,255,255,0.55); margin: 0 10px; transition: color 0.2s; }
-    footer a:hover { color: #fff; }
-
-    @media(max-width: 600px) {
-      .article-hero { padding: 40px 20px 32px; }
-      .article-body { padding: 36px 20px 56px; }
-      .cta-article { padding: 32px 24px; }
-    }
+    :root{--gold:#b8963e;--gold2:#9a7a2e;--gold-lt:#fdf6e8;--bg:#f6f6f4;--white:#ffffff;--text:#1a1a1a;--muted:#777777;--border:#e0e0e0;--green:#1a6e3f;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    header{background:var(--white);border-bottom:1px solid var(--border);padding:0 28px}
+    .hdr{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{display:flex;align-items:center;gap:14px}
+    .logo-gem{width:34px;height:34px;border:1.5px solid var(--text);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:14px;color:var(--text);font-weight:700}
+    .logo-txt .name{font-family:var(--serif);font-size:15px;font-weight:700;letter-spacing:.6px;text-transform:uppercase}
+    .logo-txt .sub{font-size:9.5px;color:var(--muted);letter-spacing:2.5px;text-transform:uppercase}
+    .back-link{font-size:13px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--border);padding-bottom:2px}
+    .back-link:hover{color:var(--text)}
+    .article-hero{background:var(--white);border-bottom:1px solid var(--border);padding:56px 28px 44px}
+    .article-inner{max-width:720px;margin:0 auto}
+    .art-tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--gold);font-weight:700;margin-bottom:14px;border:1px solid var(--gold);padding:4px 12px}
+    .article-hero h1{font-family:var(--serif);font-size:clamp(26px,4vw,42px);font-weight:700;line-height:1.1;color:var(--text);margin-bottom:18px}
+    .art-meta{font-size:13px;color:var(--muted);display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+    .art-lead{font-size:16px;color:var(--muted);line-height:1.75;border-left:3px solid var(--gold);padding-left:16px}
+    .article-body{padding:48px 28px}
+    .art-content{max-width:720px;margin:0 auto}
+    .art-content h2{font-family:var(--serif);font-size:clamp(20px,2.8vw,28px);color:var(--text);margin:36px 0 14px;line-height:1.2}
+    .art-content h3{font-family:var(--serif);font-size:19px;color:var(--text);margin:24px 0 10px}
+    .art-content p{font-size:15px;color:#333;line-height:1.85;margin-bottom:16px}
+    .art-content ul{list-style:none;margin:0 0 16px;padding:0}
+    .art-content ul li{font-size:15px;color:#333;line-height:1.75;margin-bottom:9px;padding-left:20px;position:relative}
+    .art-content ul li::before{content:'—';position:absolute;left:0;color:var(--gold);font-weight:700}
+    .art-content ol{margin:0 0 16px;padding-left:22px}
+    .art-content ol li{font-size:15px;color:#333;line-height:1.75;margin-bottom:9px}
+    .callout{background:var(--gold-lt);border-left:4px solid var(--gold);padding:18px 20px;margin:24px 0}
+    .callout p{margin:0;font-size:14px;color:#5a4000;line-height:1.75}
+    .warning{background:#fff8f0;border-left:4px solid #e07020;padding:18px 20px;margin:24px 0}
+    .warning p{margin:0;font-size:14px;color:#7a3800;line-height:1.75}
+    .timeline{margin:24px 0;padding:0;list-style:none;border-left:2px solid var(--border)}
+    .timeline li{padding:10px 0 10px 20px;position:relative;font-size:14px;color:#333}
+    .timeline li::before{content:'';position:absolute;left:-6px;top:18px;width:10px;height:10px;background:var(--gold);border-radius:50%}
+    .timeline .tl-year{font-weight:700;color:var(--text);font-size:13px}
+    table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+    th{background:var(--text);color:#fff;padding:10px 14px;text-align:left;font-weight:600}
+    td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+    tr:nth-child(even) td{background:#fafafa}
+    .cta-article{background:var(--text);color:#fff;padding:36px;margin:44px 0 0;text-align:center}
+    .cta-article h3{font-family:var(--serif);font-size:24px;color:#fff;margin-bottom:10px}
+    .cta-article p{font-size:14px;color:rgba(255,255,255,.7);margin-bottom:20px}
+    .btn-cta{display:inline-block;background:var(--gold);color:#fff;font-weight:700;font-size:14px;padding:12px 28px}
+    .author-box{background:var(--white);border:1px solid var(--border);padding:22px;margin-top:36px;display:flex;gap:16px;align-items:flex-start}
+    .author-av{width:48px;height:48px;min-width:48px;background:var(--text);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:17px;color:#fff;font-weight:700}
+    .author-info strong{display:block;font-size:14px;color:var(--text);margin-bottom:3px}
+    .author-info p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+    .related-articles{margin-top:36px;border-top:1px solid var(--border);padding-top:28px}
+    .related-articles h4{font-family:var(--serif);font-size:16px;color:var(--muted);margin-bottom:16px;text-transform:uppercase;letter-spacing:1px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+    .related-card{background:var(--white);border:1px solid var(--border);padding:16px;display:block}
+    .related-card .rc-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);font-weight:700;display:block;margin-bottom:6px}
+    .related-card .rc-title{font-family:var(--serif);font-size:14px;color:var(--text);line-height:1.4;margin-bottom:8px}
+    .related-card .rc-link{font-size:12px;color:var(--gold)}
+    footer{background:var(--text);color:#888;text-align:center;padding:24px;font-size:13px}
+    footer strong{color:#fff}
+    footer a{color:#888}
+    footer a:hover{color:var(--gold)}
+    .fl{margin-top:8px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    @media(max-width:600px){.article-hero{padding:36px 20px 28px}.article-body{padding:32px 20px}.related-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-
-<nav class="navbar">
-  <div class="navbar-inner">
-    <a href="/" class="navbar-logo">
-      Responsabilidad<br>Administradores
-      <span>Murcia Palomar Abogados, SLP</span>
+<header>
+  <div class="hdr">
+    <a href="https://www.responsabilidadadministradores.com/" class="logo">
+      <div class="logo-gem">MP</div>
+      <div class="logo-txt"><div class="name">Responsabilidad Administradores</div><div class="sub">Murcia Palomar Abogados, SLP</div></div>
     </a>
-    <a href="/blog.html" class="back-link">← Volver al blog</a>
+    <a href="https://www.responsabilidadadministradores.com/blog.html" class="back-link">&#8592; Volver al blog</a>
   </div>
-</nav>
-
+</header>
 <div class="article-hero">
   <div class="article-inner">
     <div class="art-tag">Responsabilidad Societaria</div>
     <h1>Responsabilidad solidaria del administrador por deudas sociales: el art. 367 TRLSC explicado</h1>
-    <div class="art-meta">
-      <span>✍️ Mario Palomar</span>
-      <span>📅 18/05/2026</span>
-      <span>⏱ 7 min de lectura</span>
-    </div>
+    <div class="art-meta"><span>&#9997;&#65039; Mario Palomar</span><span>&#128197; 18/05/2026</span><span>&#9203; 7 min de lectura</span></div>
     <p class="art-lead">El artículo 367 del TRLSC es la norma que más demandas personales genera contra administradores en España. Entender su mecánica, sus plazos y los argumentos de defensa disponibles es imprescindible para cualquier administrador cuya sociedad atraviesa dificultades.</p>
   </div>
 </div>
-
 <div class="article-body">
   <div class="art-content">
-
-    <p>Cada año, miles de administradores de sociedades de capital en España reciben demandas personales por deudas de sus empresas. La base legal más frecuente de esas demandas es el <strong>artículo 367 del Texto Refundido de la Ley de Sociedades de Capital (TRLSC)</strong>. Este precepto establece la responsabilidad solidaria del administrador frente a los acreedores sociales cuando la sociedad ha incurrido en causa de disolución y el administrador no ha adoptado las medidas que la ley exige. A continuación analizamos su estructura, los supuestos que la activan y los mecanismos de defensa reales ante una reclamación de este tipo.</p>
+    <p>Cada año, miles de administradores de sociedades de capital en España reciben demandas personales por deudas de sus empresas. La base legal más frecuente es el <strong>artículo 367 del Texto Refundido de la Ley de Sociedades de Capital (TRLSC)</strong>. Este precepto establece la responsabilidad solidaria del administrador frente a los acreedores sociales cuando la sociedad ha incurrido en causa de disolución y el administrador no ha adoptado las medidas que la ley exige.</p>
 
     <h2>El presupuesto: la causa de disolución</h2>
-
     <p>El artículo 367 TRLSC parte de un presupuesto concreto: que la sociedad haya incurrido en alguna de las <strong>causas de disolución obligatoria</strong> previstas en el artículo 363 TRLSC. Las más habituales en la práctica son:</p>
-
     <ul>
       <li><strong>Pérdidas que reducen el patrimonio neto por debajo de la mitad del capital social</strong> (art. 363.1.e TRLSC): es la causa más frecuente y la que genera el mayor número de demandas del art. 367.</li>
       <li>Reducción del capital social por debajo del mínimo legal sin que se acuerde simultáneamente su aumento o la transformación de la sociedad (art. 363.1.f TRLSC).</li>
       <li>Paralización de los órganos sociales que impida el funcionamiento normal de la sociedad (art. 363.1.c TRLSC).</li>
       <li>Imposibilidad de conseguir el fin social (art. 363.1.a TRLSC).</li>
     </ul>
-
     <p>En todos estos casos, la obligación del administrador surge de forma automática desde el momento en que concurre la causa.</p>
 
     <h2>Las obligaciones del administrador ante la causa de disolución</h2>
-
     <p>Una vez que el administrador conoce —o debería haber conocido— la existencia de una causa de disolución, el TRLSC le impone un itinerario de actuación con plazos estrictos:</p>
 
     <h3>1. Convocar la Junta General en el plazo de dos meses</h3>
     <p>El administrador debe convocar la Junta General en el plazo de <strong>dos meses</strong> desde que concurre la causa de disolución (art. 365 TRLSC). El orden del día de esa junta debe incluir la adopción del acuerdo de disolución o, alternativamente, las medidas para enervar la causa: ampliación de capital, reducción de pérdidas, transformación de la sociedad, etc.</p>
 
     <h3>2. Solicitar la disolución judicial en caso de desacuerdo o inactividad</h3>
-    <p>Si la junta no adopta ningún acuerdo o si no es posible lograr el quórum necesario, el administrador debe solicitar la disolución judicial en el plazo de <strong>dos meses</strong> siguientes a la fecha prevista para la celebración de la junta o a la fecha en que se hubiere celebrado sin alcanzar el acuerdo necesario (art. 366 TRLSC).</p>
+    <p>Si la junta no adopta ningún acuerdo o si no es posible lograr el quórum necesario, el administrador debe solicitar la disolución judicial en el plazo de <strong>dos meses</strong> siguientes (art. 366 TRLSC).</p>
 
-    <div class="alert-box">
-      <p><strong>⚠️ Consecuencia del incumplimiento:</strong> si el administrador no convoca la junta en el plazo de dos meses, o si convocada la junta no solicita la disolución judicial cuando procede, responde solidariamente de <strong>todas las obligaciones sociales posteriores</strong> al acaecimiento de la causa de disolución (art. 367.1 TRLSC). No de una parte de las deudas: de todas las posteriores, sin límite.</p>
+    <div class="warning">
+      <p>⚠️ <strong>Consecuencia del incumplimiento:</strong> si el administrador no convoca la junta en el plazo de dos meses, responde solidariamente de <strong>todas las obligaciones sociales posteriores</strong> al acaecimiento de la causa de disolución. No de una parte de las deudas: de todas las posteriores, sin límite.</p>
     </div>
 
     <h2>La naturaleza jurídica de la responsabilidad del art. 367 TRLSC</h2>
-
-    <p>La jurisprudencia del Tribunal Supremo ha debatido extensamente si la responsabilidad del art. 367 es objetiva —es decir, si basta con acreditar la causa de disolución y el incumplimiento del plazo— o si exige culpa. La doctrina consolidada del Alto Tribunal es que se trata de una <strong>responsabilidad por incumplimiento de una obligación legal</strong>, no puramente objetiva, pero sí de naturaleza especialmente rigurosa.</p>
-
-    <p>La STS de 28 de febrero de 2023 (rec. 3947/2019) reafirmó que el acreedor que ejercita la acción del art. 367 TRLSC no necesita probar la culpa del administrador: basta con acreditar (i) que la sociedad incurrió en causa de disolución, (ii) que el administrador no cumplió con las obligaciones de los arts. 365 y 366 TRLSC, y (iii) que el crédito reclamado es posterior al momento en que debió actuarse. La carga de la prueba se invierte: es el administrador quien debe demostrar que actuó diligentemente o que existía causa justificada.</p>
-
-    <h2>El dies a quo: cuándo empieza a contarse el plazo</h2>
-
-    <p>Uno de los puntos más litigiosos en la práctica es determinar el <strong>momento exacto en que el administrador debía conocer la causa de disolución</strong>, pues de ahí arranca el plazo de dos meses para convocar la junta. En el caso de pérdidas que reducen el patrimonio neto por debajo del umbral legal, la jurisprudencia ha establecido que el administrador conoce o debería conocer la situación desde que dispone de la información contable que la refleja —normalmente la formulación de las cuentas anuales—, aunque algunos fallos han aplicado criterios más estrictos cuando las pérdidas eran evidentes antes de la formulación formal de cuentas.</p>
-
-    <p>La STS de 14 de julio de 2021 (rec. 1440/2018) precisó que el administrador no puede escudarse en la falta de llevanza formal de contabilidad para alegar desconocimiento de las pérdidas: si el estado real de la sociedad era objetivamente deficitario, la ignorancia no exonera.</p>
+    <p>La jurisprudencia del Tribunal Supremo ha establecido que se trata de una <strong>responsabilidad por incumplimiento de una obligación legal</strong>, no puramente objetiva, pero sí de naturaleza especialmente rigurosa. La STS de 28 de febrero de 2023 reafirmó que el acreedor no necesita probar la culpa del administrador: basta con acreditar que la sociedad incurrió en causa de disolución, que el administrador no cumplió con sus obligaciones, y que el crédito reclamado es posterior al momento en que debió actuarse. La carga de la prueba se invierte.</p>
 
     <h2>Créditos afectados: sólo los posteriores a la causa de disolución</h2>
-
-    <p>Un aspecto crucial es que la responsabilidad solidaria del art. 367 TRLSC no alcanza a todas las deudas de la sociedad, sino únicamente a las <strong>contraídas con posterioridad</strong> al momento en que el administrador debió actuar (convocar junta o solicitar la disolución judicial). Las deudas anteriores quedan fuera de la acción del art. 367 —sin perjuicio de que puedan ser objeto de otras acciones de responsabilidad.</p>
-
-    <p>Esta delimitación temporal es fundamental en la defensa del administrador: acreditar que el crédito reclamado es anterior a la causa de disolución, o anterior al momento en que el administrador debía haber convocado la junta, puede suponer la desestimación de la demanda.</p>
-
-    <div class="callout">
-      <p>El Tribunal Supremo ha matizado en múltiples resoluciones (entre otras, STS de 10 de marzo de 2022, rec. 5048/2019) que la acción del art. 367 TRLSC prescribe en el plazo general de cuatro años del art. 241 bis TRLSC, contado desde que el acreedor pudo ejercitarla. Es importante analizar la prescripción como primer argumento de defensa en cualquier reclamación.</p>
-    </div>
+    <p>La responsabilidad solidaria del art. 367 TRLSC no alcanza a <em>todas</em> las deudas de la sociedad, sino únicamente a las <strong>contraídas con posterioridad</strong> al momento en que el administrador debió actuar. Las deudas anteriores quedan fuera de la acción del art. 367. Esta delimitación temporal es fundamental en la defensa del administrador: acreditar que el crédito reclamado es anterior a la causa de disolución puede suponer la desestimación de la demanda.</p>
 
     <h2>Argumentos de defensa frente a la acción del art. 367 TRLSC</h2>
 
-    <p>Aunque la posición del administrador demandado es exigente, existen líneas de defensa reales y técnicamente sólidas:</p>
-
     <h3>1. Acreditación de que se adoptaron medidas de enervación</h3>
-    <p>Si el administrador convocó junta a tiempo y la junta adoptó medidas razonables para superar la causa de disolución —aunque éstas finalmente no prosperaran—, la responsabilidad puede quedar excluida. La clave es la documentación: actas de junta, acuerdos adoptados, informes de gestión que reflejen la situación.</p>
+    <p>Si el administrador convocó junta a tiempo y la junta adoptó medidas razonables para superar la causa de disolución, la responsabilidad puede quedar excluida. La clave es la documentación: actas de junta, acuerdos adoptados, informes de gestión.</p>
 
     <h3>2. Impugnación del dies a quo de la causa de disolución</h3>
-    <p>Discutir cuándo exactamente concurrió la causa de disolución y cuándo el administrador la conoció o debió conocerla puede trasladar el crédito reclamado a un momento anterior a la causa, excluyéndolo del ámbito del art. 367.</p>
+    <p>Discutir cuándo exactamente concurrió la causa de disolución y cuándo el administrador la conoció puede trasladar el crédito reclamado a un momento anterior a la causa, excluyéndolo del ámbito del art. 367.</p>
 
     <h3>3. Prescripción de la acción</h3>
-    <p>El plazo de cuatro años debe computarse cuidadosamente. En casos en los que la causa de disolución fue conocida hace años y el acreedor no ejercitó la acción con prontitud, la prescripción puede ser un argumento determinante.</p>
+    <p>El plazo de cuatro años del art. 241 bis TRLSC debe computarse cuidadosamente. En casos donde la causa de disolución fue conocida hace años y el acreedor no ejercitó la acción con prontitud, la prescripción puede ser determinante.</p>
 
-    <h3>4. Inexistencia de relación de causalidad</h3>
-    <p>En supuestos donde el daño al acreedor no guarda relación directa con la omisión del administrador —por ejemplo, cuando la deuda hubiera resultado igualmente impagada aunque se hubiera iniciado el proceso disolutorio—, cabe argumentar la ruptura del nexo causal exigido para la responsabilidad.</p>
-
-    <h3>5. Renuncia o cese del administrador antes de la causa</h3>
-    <p>Si el administrador renunció o fue cesado antes del momento en que concurrió la causa de disolución, no puede imputársele el incumplimiento de los arts. 365 y 366 TRLSC. La inscripción registral del cese es relevante, aunque el Tribunal Supremo ha admitido la eficacia del cese no inscrito frente al acreedor que tenía conocimiento real de él.</p>
-
-    <h2>Implicaciones prácticas para el administrador en dificultades</h2>
-
-    <p>El art. 367 TRLSC exige del administrador una monitorización permanente del estado patrimonial de la sociedad. En términos prácticos:</p>
-
-    <ul>
-      <li>Revisa el patrimonio neto de la sociedad al cierre de cada ejercicio y con periodicidad trimestral si la situación es delicada.</li>
-      <li>Documenta en acta cualquier análisis o reunión en la que se valore la situación patrimonial de la sociedad.</li>
-      <li>Si detectas pérdidas que reducen el patrimonio neto por debajo de la mitad del capital social, convoca junta de forma inmediata —no esperes a la formulación formal de las cuentas anuales si la situación es ya evidente.</li>
-      <li>Consulta con un abogado especializado antes de que venza el plazo de dos meses: la diferencia entre actuar en plazo y fuera de plazo puede ser tu patrimonio personal.</li>
-    </ul>
-
-    <div class="callout">
-      <p>La reforma concursal de 2022 (Ley 16/2022) introdujo los planes de reestructuración del TRLC como alternativa al concurso para empresas en dificultades, pero viables. Si tu sociedad tiene pérdidas significativas pero actividad real, un plan de reestructuración puede ser la herramienta que evite tanto el concurso como la responsabilidad personal del administrador.</p>
-    </div>
+    <h3>4. Renuncia o cese del administrador antes de la causa</h3>
+    <p>Si el administrador renunció o fue cesado antes del momento en que concurrió la causa de disolución, no puede imputársele el incumplimiento de los arts. 365 y 366 TRLSC.</p>
 
     <h2>Conclusión</h2>
-
-    <p>El artículo 367 TRLSC es una de las normas que más consecuencias personales tiene para los administradores de empresas en crisis. Su mecánica es rigurosa, pero no objetiva: la jurisprudencia del Tribunal Supremo ha reconocido que existen argumentos de defensa reales cuando el administrador actuó diligentemente. La clave es la documentación de las actuaciones adoptadas y la reacción a tiempo ante las señales de deterioro patrimonial. Si has recibido una demanda del art. 367 TRLSC o tu empresa está en una situación que podría activarlo, el momento de actuar es ahora.</p>
-
+    <p>El artículo 367 TRLSC es una de las normas que más consecuencias personales tiene para los administradores de empresas en crisis. Su mecánica es rigurosa, pero existen argumentos de defensa reales cuando el administrador actuó diligentemente. La clave es la documentación de las actuaciones adoptadas y la reacción a tiempo ante las señales de deterioro patrimonial.</p>
     <div class="cta-article">
       <h3>¿Has recibido una demanda por el art. 367 TRLSC?</h3>
       <p>Analizamos tu caso de forma gratuita. Te explicamos qué argumentos de defensa tienes y cuáles son tus opciones reales.</p>
-      <a href="/#formulario" class="btn-cta">Solicitar consulta gratuita →</a>
+      <a href="https://www.responsabilidadadministradores.com/#formulario" class="btn-cta">Consulta gratuita &#8594;</a>
     </div>
-
     <div class="author-box">
       <div class="author-av">MP</div>
       <div class="author-info">
         <strong>Mario Palomar</strong>
-        <p>Abogado especialista en derecho concursal y responsabilidad de administradores. Socio en Murcia Palomar Abogados, SLP. Publica análisis jurídicos en <a href="https://www.mariopalomarabogado.blog" style="color:#374151; font-weight:600;">mariopalomarabogado.blog</a>.</p>
+        <p>Abogado especialista en derecho concursal y responsabilidad de administradores. Socio en Murcia Palomar Abogados, SLP. Publica an&#225;lisis jur&#237;dicos en <a href="https://www.mariopalomarabogado.blog" style="color:var(--gold)">mariopalomarabogado.blog</a>.</p>
       </div>
     </div>
-
-  </div>
-</div>
-
-<!-- ARTÍCULOS RELACIONADOS -->
-<section class="related">
-  <div class="related-inner">
-    <h3>Artículos relacionados</h3>
-    <div class="related-grid">
-      <a href="/administrador-cuando-respondo-personalmente-deudas-empresa.html" class="related-card">
-        <div class="related-card-tag">Responsabilidad Societaria</div>
-        <h4>Administrador de empresa: cuándo respondo personalmente de las deudas</h4>
-        <span>Leer artículo →</span>
+    <div class="related-articles">
+      <h4>Art&#237;culos relacionados</h4>
+      <div class="related-grid">
+      <a href="https://www.responsabilidadadministradores.com/administrador-cuando-respondo-personalmente-deudas-empresa.html" class="related-card">
+        <span class="rc-tag">Responsabilidad Societaria</span>
+        <div class="rc-title">Administrador de empresa: cuándo respondo personalmente de las deudas</div>
+        <span class="rc-link">Leer art&#237;culo &#8594;</span>
       </a>
-      <a href="/derivacion-tributaria-administrador-art-43-lgt.html" class="related-card">
-        <div class="related-card-tag">Derivación Tributaria</div>
-        <h4>Derivación tributaria al administrador (art. 43 LGT): lo que el Tribunal Supremo ha cambiado en 2025</h4>
-        <span>Leer artículo →</span>
+      <a href="https://www.responsabilidadadministradores.com/responsabilidad-administradores-preinsolvencia.html" class="related-card">
+        <span class="rc-tag">Preinsolvencia</span>
+        <div class="rc-title">Responsabilidad del administrador en preinsolvencia: obligaciones, plazos y defensa</div>
+        <span class="rc-link">Leer art&#237;culo &#8594;</span>
       </a>
-      <a href="/responsabilidad-administradores-preinsolvencia.html" class="related-card">
-        <div class="related-card-tag">Preinsolvencia</div>
-        <h4>Responsabilidad del administrador en preinsolvencia: obligaciones, plazos y defensa</h4>
-        <span>Leer artículo →</span>
+      <a href="https://www.responsabilidadadministradores.com/derivacion-tributaria-administrador-art-43-lgt.html" class="related-card">
+        <span class="rc-tag">Derivación Tributaria</span>
+        <div class="rc-title">Derivación tributaria al administrador (art. 43 LGT)</div>
+        <span class="rc-link">Leer art&#237;culo &#8594;</span>
       </a>
+      </div>
     </div>
   </div>
-</section>
-
+</div>
 <footer>
-  <p>© 2026 Murcia Palomar Abogados, SLP ·
-    <a href="/aviso-legal.html">Aviso Legal</a> ·
-    <a href="/privacidad.html">Privacidad</a> ·
-    <a href="/cookies.html">Cookies</a>
-  </p>
+  <p><strong>MURCIA PALOMAR ABOGADOS, SLP</strong> &middot; Derecho Concursal &middot; Barcelona &middot; Madrid</p>
+  <div class="fl">
+    <a href="https://www.responsabilidadadministradores.com/">Inicio</a>
+    <a href="https://www.responsabilidadadministradores.com/blog.html">Blog</a>
+    <a href="https://www.responsabilidadadministradores.com/aviso-legal.html">Aviso Legal</a>
+    <a href="https://www.responsabilidadadministradores.com/privacidad.html">Privacidad</a>
+    <a href="https://www.responsabilidadadministradores.com/cookies.html">Cookies</a>
+  </div>
+  <p style="margin-top:8px;font-size:11px;color:#556688">&copy; 2026 Murcia Palomar Abogados, SLP. Contenido informativo, no asesoramiento jur&#237;dico.</p>
 </footer>
-
 </body>
 </html>
