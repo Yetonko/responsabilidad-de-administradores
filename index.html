@@ -866,6 +866,8 @@
             <form id="formAdmin" onsubmit="handleSubmit(event, 'administrador')">
               <!-- Honeypot antispam -->
               <input type="text" id="hp_website" name="website" style="display:none !important" tabindex="-1" autocomplete="off" />
+              <!-- Token de origen verificable por Make -->
+              <input type="hidden" name="form_token" value="MPA-RADM-2026" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="nombre_a">Nombre <span>*</span></label>
@@ -910,6 +912,10 @@
           <!-- Panel asesoría -->
           <div class="form-panel" id="panel-asesoria">
             <form id="formAsesoria" onsubmit="handleSubmit(event, 'asesoria')">
+              <!-- Honeypot antispam -->
+              <input type="text" id="hp_website_b" name="website" style="display:none !important" tabindex="-1" autocomplete="off" />
+              <!-- Token de origen verificable por Make -->
+              <input type="hidden" name="form_token" value="MPA-RADM-2026" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="nombre_b">Nombre <span>*</span></label>
@@ -1059,7 +1065,7 @@
         <div class="footer-brand">
           <div class="footer-logo">Responsabilidad<span>Administradores.com</span></div>
           <p>Defensa especializada frente a derivaciones tributarias y responsabilidad societaria. Un servicio de Murcia Palomar Abogados, SLP.</p>
-          <p style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35);">Colegio de Abogados de Barcelona · Colegiado nº XXXXX</p>
+          <p style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35);">Colegio de Abogados de Barcelona · Colegiado nº 22.975</p>
         </div>
         <div class="footer-col">
           <h4>Servicios</h4>
@@ -1142,8 +1148,33 @@
     async function handleSubmit(e, tipo) {
       e.preventDefault();
       const form = e.target;
-      // Honeypot antispam: si el campo trampa tiene valor, es un bot
+
+      // Honeypot: si el campo trampa tiene valor, es un bot → abandonar silenciosamente
       if (form.querySelector('[name="website"]') && form.querySelector('[name="website"]').value) return;
+
+      // Validación teléfono español: 6, 7, 8 o 9 seguidos de 8 dígitos
+      const telField = form.querySelector('[name="telefono"]');
+      if (telField) {
+        const telVal = telField.value.replace(/[\s\-\.]/g, '');
+        if (!/^[6789]\d{8}$/.test(telVal)) {
+          telField.focus();
+          telField.setCustomValidity('Introduce un teléfono español válido (9 dígitos, comenzando por 6, 7, 8 o 9)');
+          telField.reportValidity();
+          return;
+        }
+        telField.setCustomValidity('');
+      }
+
+      // Validación mínima nombre: al menos 2 caracteres
+      const nombreField = form.querySelector('[name="nombre"]');
+      if (nombreField && nombreField.value.trim().length < 2) {
+        nombreField.focus();
+        nombreField.setCustomValidity('Por favor, introduce tu nombre');
+        nombreField.reportValidity();
+        return;
+      }
+      if (nombreField) nombreField.setCustomValidity('');
+
       const btn = form.querySelector('.form-submit');
       const originalText = btn.textContent;
       btn.textContent = 'Enviando...';
@@ -1153,6 +1184,8 @@
       data.tipo_lead = tipo;
       data.origen = 'responsabilidadadministradores.com';
       data.fecha = new Date().toISOString();
+      // Eliminar honeypot del payload enviado
+      delete data.website;
 
       try {
         await fetch(WEBHOOK_URL, {
