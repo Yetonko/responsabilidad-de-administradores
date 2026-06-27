@@ -71,6 +71,9 @@
   }
   </script>
 
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -901,6 +904,8 @@
                 <label for="mensaje_a">Cuéntanos brevemente tu caso (opcional)</label>
                 <textarea id="mensaje_a" name="mensaje" placeholder="Importe aproximado de la deuda, fase del expediente, plazos recibidos..."></textarea>
               </div>
+              <!-- Cloudflare Turnstile widget -->
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADr4q8yt9Z0e2NCN" data-theme="light" style="margin-top:12px;"></div>
               <button type="submit" class="form-submit">Solicitar consulta gratuita →</button>
               <div class="form-rgpd">
                 <input type="checkbox" id="rgpd_a" name="rgpd" required />
@@ -951,6 +956,8 @@
                 <label for="mensaje_b">Cuéntanos (opcional)</label>
                 <textarea id="mensaje_b" name="mensaje" placeholder="Breve descripción del caso o de tu asesoría..."></textarea>
               </div>
+              <!-- Cloudflare Turnstile widget -->
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADr4q8yt9Z0e2NCN" data-theme="light" style="margin-top:12px;"></div>
               <button type="submit" class="form-submit">Solicitar información →</button>
               <div class="form-rgpd">
                 <input type="checkbox" id="rgpd_b" name="rgpd" required />
@@ -1103,8 +1110,8 @@
   </div>
 
   <script>
-    // ── WEBHOOK MAKE (actualizar con el webhook de la nueva web) ──
-    const WEBHOOK_URL = 'https://hook.eu1.make.com/mgoa6imafr6botbdoe2i6dt4yim2b6vx';
+    // ── ENDPOINT: Cloudflare Worker (verifica Turnstile y reenvía a Make internamente) ──
+    const WEBHOOK_URL = 'https://radm-form-proxy.yetonko.workers.dev';
 
     // Navbar
     function toggleMenu() {
@@ -1186,6 +1193,9 @@
       data.fecha = new Date().toISOString();
       // Eliminar honeypot del payload enviado
       delete data.website;
+      // Incluir token de Turnstile (el Worker lo verifica server-side)
+      const turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value || '';
+      data['cf-turnstile-response'] = turnstileToken;
 
       try {
         await fetch(WEBHOOK_URL, {
