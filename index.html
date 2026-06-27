@@ -71,6 +71,64 @@
   }
   </script>
 
+  <!-- FAQ Schema para rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre responsabilidad subsidiaria y solidaria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La responsabilidad subsidiaria (la más frecuente en derivaciones tributarias) solo puede exigirse al administrador una vez que Hacienda haya agotado las vías de cobro frente a la sociedad. La solidaria es directa: Hacienda puede ir contra el administrador sin necesidad de ir primero contra la empresa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tengo para impugnar una derivación tributaria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "15 días hábiles desde la notificación del acuerdo de derivación para interponer recurso de reposición. Si se interpone recurso contencioso-administrativo directamente, el plazo es de 2 meses. Es fundamental actuar rápido porque los plazos son fatales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo ser responsable si ya he cesado como administrador?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende. Si cesaste antes de que se devengaran las deudas tributarias, en principio no puedes ser responsable. Pero la inscripción registral del cese es fundamental: Hacienda puede ignorar el cese si no estaba inscrito en el Registro Mercantil. Cada caso tiene sus particularidades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si la sociedad ya está extinguida?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La extinción de la sociedad no extingue las deudas tributarias ni la posibilidad de derivar responsabilidad al administrador. Hacienda puede iniciar o continuar un expediente de derivación aunque la sociedad ya no exista formalmente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta la defensa frente a una derivación tributaria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende de la complejidad y del importe de la deuda. Trabajamos con dos modalidades: honorario fijo cerrado por fase procesal o estructura fijo más cuota de éxito para casos con deuda elevada. En la primera consulta gratuita te presentamos la propuesta sin compromisos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el art. 367 TRLSC y cuándo me afecta como administrador?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El artículo 367 de la Ley de Sociedades de Capital establece la responsabilidad solidaria del administrador con las deudas sociales cuando no convoca junta de socios para disolver la sociedad dentro de los dos meses siguientes a que concurra una causa legal de disolución (principalmente pérdidas que reducen el patrimonio neto a menos de la mitad del capital social)."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Cloudflare Turnstile -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
@@ -344,6 +402,23 @@
     .sticky-cta-btn { background: white; color: var(--black); border: none; padding: 13px; font-weight: 600; font-size: 0.875rem; cursor: pointer; width: 100%; transition: background 0.15s; }
     .sticky-cta-btn:hover { background: var(--bg); }
 
+    /* ── ACREEDORES ── */
+    .acreedores { background: var(--white); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .acreedores-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    .acreedores-label { display: inline-block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+    .acreedores h2 { font-family: var(--serif); font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 500; color: var(--ink); line-height: 1.25; margin-bottom: 16px; }
+    .acreedores-sub { color: var(--mid); font-size: 0.9rem; line-height: 1.8; margin-bottom: 28px; }
+    .acreedores-checklist { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); margin-bottom: 32px; }
+    .acreedores-check-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 0.875rem; color: var(--mid); line-height: 1.6; }
+    .acreedores-check-item::before { content: '✓'; color: var(--ink); font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; font-weight: 700; }
+    .acreedores-card { background: var(--bg); border: 1px solid var(--rule); padding: 32px; }
+    .acreedores-card-title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--ink); margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+    .acreedores-card-item { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+    .acreedores-card-item:last-child { border-bottom: none; }
+    .acreedores-card-num { font-family: var(--serif); font-size: 1.3rem; color: var(--rule); flex-shrink: 0; line-height: 1.2; }
+    .acreedores-card-text strong { display: block; font-size: 0.875rem; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+    .acreedores-card-text span { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; gap: 40px; }
@@ -352,6 +427,7 @@
       .via-card:last-child { border-bottom: none; }
       .senales-grid { grid-template-columns: 1fr; }
       .asesorias-inner { grid-template-columns: 1fr; gap: 40px; }
+      .acreedores-inner { grid-template-columns: 1fr; }
       .defensa-grid { grid-template-columns: 1fr; }
       .defensa-card { border-right: none; }
       .defensa-card:nth-last-child(-n+2) { border-bottom: 1px solid var(--rule); }
@@ -398,6 +474,7 @@
           <li><a href="#vias">Las 3 vías</a></li>
           <li><a href="#defensa">Defensa</a></li>
           <li><a href="#asesorias">Para asesorías</a></li>
+          <li><a href="#acreedores">Para acreedores</a></li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="/blog.html">Blog</a></li>
@@ -411,6 +488,7 @@
         <a href="#vias" onclick="toggleMenu()">Las 3 vías</a>
         <a href="#defensa" onclick="toggleMenu()">Cómo defenderse</a>
         <a href="#asesorias" onclick="toggleMenu()">Para asesorías</a>
+        <a href="#acreedores" onclick="toggleMenu()">Para acreedores</a>
         <a href="#proceso" onclick="toggleMenu()">Proceso</a>
         <a href="#faq" onclick="toggleMenu()">Preguntas frecuentes</a>
         <a href="/blog.html" onclick="toggleMenu()">Blog</a>
@@ -739,6 +817,62 @@
     </div>
   </section>
 
+  <!-- PARA ACREEDORES -->
+  <section class="acreedores" id="acreedores">
+    <div class="container">
+      <div class="acreedores-inner">
+        <div>
+          <div class="acreedores-label">Para acreedores</div>
+          <h2>¿La empresa que te debe dinero cerró sin pagarte?</h2>
+          <p class="acreedores-sub">
+            Si la sociedad dejó de operar sin disolver correctamente, el administrador puede responder solidariamente de sus deudas con su patrimonio personal. El art. 367 TRLSC te abre esa vía. Evaluamos si tu caso tiene recorrido.
+          </p>
+          <div class="acreedores-checklist">
+            <div class="acreedores-check-item">El importe mínimo orientativo es de 10.000 € para que la acción sea económicamente viable</div>
+            <div class="acreedores-check-item">La sociedad debe haber incurrido en causa de disolución sin que el administrador actuara en los plazos legales</div>
+            <div class="acreedores-check-item">Verificamos la situación registral de la sociedad y la localización del administrador</div>
+            <div class="acreedores-check-item">Primera valoración sin coste: te decimos si hay recorrido antes de comprometerte con honorarios</div>
+          </div>
+          <a href="#formulario" onclick="activarTabAcreedor()" class="btn btn-primary">Evaluar si puedo reclamar →</a>
+        </div>
+        <div class="acreedores-card">
+          <div class="acreedores-card-title">¿Cuándo puede el acreedor reclamar al administrador?</div>
+          <div class="acreedores-card-item">
+            <div class="acreedores-card-num">1</div>
+            <div class="acreedores-card-text">
+              <strong>La sociedad debía haberse disuelto</strong>
+              <span>Pérdidas que reducen el patrimonio neto a menos de la mitad del capital social, o cualquier otra causa del art. 363 LSC</span>
+            </div>
+          </div>
+          <div class="acreedores-card-item">
+            <div class="acreedores-card-num">2</div>
+            <div class="acreedores-card-text">
+              <strong>El administrador no convocó junta en 2 meses</strong>
+              <span>Desde que se produjo la causa, el administrador tenía 2 meses para convocar junta de disolución. Si no lo hizo, responde</span>
+            </div>
+          </div>
+          <div class="acreedores-card-item">
+            <div class="acreedores-card-num">3</div>
+            <div class="acreedores-card-text">
+              <strong>Tu deuda es posterior a la causa de disolución</strong>
+              <span>El art. 367 cubre las deudas contraídas a partir del momento en que debió disolverse. Las anteriores tienen otra vía</span>
+            </div>
+          </div>
+          <div class="acreedores-card-item">
+            <div class="acreedores-card-num">4</div>
+            <div class="acreedores-card-text">
+              <strong>Plazo de la acción: 4 años</strong>
+              <span>La acción del art. 367 prescribe a los 4 años. Si tu deuda tiene más de ese plazo, puede quedar fuera. Consúltanos</span>
+            </div>
+          </div>
+          <a href="#formulario" onclick="activarTabAcreedor()" style="display:block; margin-top:20px; background:var(--black); color:white; text-align:center; padding:12px; font-size:0.85rem; font-weight:500; letter-spacing:0.02em; transition:background 0.15s;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='var(--black)'">
+            Consultar mi caso como acreedor →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROCESO -->
   <section class="proceso" id="proceso">
     <div class="container">
@@ -861,6 +995,7 @@
           <p class="form-box-sub">Rellena el formulario y te llamamos sin coste ni compromiso</p>
           <div class="form-tabs">
             <button class="form-tab active" id="tabAdminBtn" onclick="cambiarFormTab('admin')">Soy administrador</button>
+            <button class="form-tab" id="tabAcreedorBtn" onclick="cambiarFormTab('acreedor')">Soy acreedor</button>
             <button class="form-tab" id="tabAsesoriaBtn" onclick="cambiarFormTab('asesoria')">Soy asesoría</button>
           </div>
 
@@ -910,6 +1045,69 @@
               <div class="form-rgpd">
                 <input type="checkbox" id="rgpd_a" name="rgpd" required />
                 <label for="rgpd_a">He leído y acepto la <a href="/privacidad">Política de Privacidad</a>. Consiento el tratamiento de mis datos para recibir información sobre los servicios solicitados.</label>
+              </div>
+            </form>
+          </div>
+
+          <!-- Panel acreedor -->
+          <div class="form-panel" id="panel-acreedor">
+            <form id="formAcreedor" onsubmit="handleSubmit(event, 'acreedor')">
+              <!-- Honeypot antispam -->
+              <input type="text" id="hp_website_c" name="website" style="display:none !important" tabindex="-1" autocomplete="off" />
+              <!-- Token de origen verificable por Make -->
+              <input type="hidden" name="form_token" value="MPA-RADM-2026" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre_c">Nombre <span>*</span></label>
+                  <input type="text" id="nombre_c" name="nombre" placeholder="Tu nombre" required />
+                </div>
+                <div class="form-group">
+                  <label for="apellidos_c">Apellidos <span>*</span></label>
+                  <input type="text" id="apellidos_c" name="apellidos" placeholder="Tus apellidos" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="empresa_c">Empresa deudora <span>*</span></label>
+                <input type="text" id="empresa_c" name="empresa_deudora" placeholder="Nombre de la empresa que te debe" required />
+              </div>
+              <div class="form-group">
+                <label for="importe_c">Importe aproximado de la deuda <span>*</span></label>
+                <select id="importe_c" name="importe_deuda" required>
+                  <option value="">Selecciona un tramo...</option>
+                  <option value="10k-30k">10.000 € – 30.000 €</option>
+                  <option value="30k-100k">30.000 € – 100.000 €</option>
+                  <option value="100k-300k">100.000 € – 300.000 €</option>
+                  <option value="+300k">Más de 300.000 €</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="situacion_c">Situación actual de la empresa <span>*</span></label>
+                <select id="situacion_c" name="situacion_empresa" required>
+                  <option value="">Selecciona...</option>
+                  <option value="activa_impagos">Sigue activa pero no paga</option>
+                  <option value="concurso">Está en concurso de acreedores</option>
+                  <option value="extinguida">Ya está extinguida (cerrada)</option>
+                  <option value="no_se">No lo sé con seguridad</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="telefono_c">Teléfono <span>*</span></label>
+                <input type="tel" id="telefono_c" name="telefono" placeholder="6XX XXX XXX" required />
+              </div>
+              <div class="form-group">
+                <label for="email_c">Email <span>*</span></label>
+                <input type="email" id="email_c" name="email" placeholder="tu@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="mensaje_c">Cuéntanos más (opcional)</label>
+                <textarea id="mensaje_c" name="mensaje" placeholder="Cualquier detalle relevante: título ejecutivo, sentencia, fecha del impago..."></textarea>
+              </div>
+              <!-- Cloudflare Turnstile widget -->
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADr4q8yt9Z0e2NCN" data-theme="light" style="margin-top:12px;"></div>
+              <button type="submit" class="form-submit">Evaluar si puedo reclamar →</button>
+              <div class="form-rgpd">
+                <input type="checkbox" id="rgpd_c" name="rgpd" required />
+                <label for="rgpd_c">He leído y acepto la <a href="/privacidad">Política de Privacidad</a>. Consiento el tratamiento de mis datos para recibir información sobre los servicios solicitados.</label>
               </div>
             </form>
           </div>
@@ -1072,7 +1270,7 @@
         <div class="footer-brand">
           <div class="footer-logo">Responsabilidad<span>Administradores.com</span></div>
           <p>Defensa especializada frente a derivaciones tributarias y responsabilidad societaria. Un servicio de Murcia Palomar Abogados, SLP.</p>
-          <p style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35);">Colegio de Abogados de Barcelona · Colegiado nº 22.975</p>
+          <p style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35);">Colegio de Abogados de Barcelona · Colegiado nº 30.928</p>
         </div>
         <div class="footer-col">
           <h4>Servicios</h4>
@@ -1127,16 +1325,22 @@
       document.getElementById('tab-asesoria').classList.toggle('active', tab === 'asesoria');
     }
 
-    // Form tabs
+    // Form tabs (3: admin, acreedor, asesoria)
     function cambiarFormTab(tipo) {
       document.getElementById('tabAdminBtn').classList.toggle('active', tipo === 'admin');
+      document.getElementById('tabAcreedorBtn').classList.toggle('active', tipo === 'acreedor');
       document.getElementById('tabAsesoriaBtn').classList.toggle('active', tipo === 'asesoria');
       document.getElementById('panel-admin').classList.toggle('active', tipo === 'admin');
+      document.getElementById('panel-acreedor').classList.toggle('active', tipo === 'acreedor');
       document.getElementById('panel-asesoria').classList.toggle('active', tipo === 'asesoria');
     }
 
     function activarTabAsesorias() {
       setTimeout(() => cambiarFormTab('asesoria'), 100);
+    }
+
+    function activarTabAcreedor() {
+      setTimeout(() => cambiarFormTab('acreedor'), 100);
     }
 
     // FAQ accordion
